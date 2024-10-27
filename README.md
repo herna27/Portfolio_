@@ -55,7 +55,7 @@ The HTML file must have:<br />
 * a meta element for the viewport - 10 points<br />
 * a linked stylesheet - 10 points<br />
 * a nav element - 10 points<br />
-*more than one section element - 10 points<br />
+* more than one section element - 10 points<br />
 
 **Portfolio Background Images 10%**
 Five portfolio images added as background images - 2 points each<br />
