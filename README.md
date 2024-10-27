@@ -57,11 +57,11 @@ The HTML file must have:<br />
 * a nav element - 10 points<br />
 * more than one section element - 10 points<br />
 
-**Portfolio Background Images 10%**
+**Portfolio Background Images 10%** <br />
 Five portfolio images added as background images - 2 points each<br />
 
-**Navigation Links 10%**
+**Navigation Links 10%** <br />
 A navigation link for each section - 10 points<br />
 
-**CSS is Responsive 10%**
+**CSS is Responsive 10%**<br />
 You'll need to update the CSS so that it contains media queries to make the page responsive. Currently, the first portfolio column is set to have a greater height than the others when the page width is greater than 768px. When the page width is less than 768px, the portfolio columns should stack and be the same height.
