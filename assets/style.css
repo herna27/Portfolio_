@@ -4,11 +4,11 @@
   
   /* brand color palette */
   :root {
-    --primary: rgba(68, 88, 119, 1);
-    --secondary: rgba(146, 204, 206, 1);
-    --tertiary: rgba(49, 52, 61, 1);
-    --dark: rgba(28, 29, 33, 1);
-    --light: rgba(238, 238, 247, 1);
+    --primary: #4f1919(79, 25, 25);
+    --secondary: #a76e6e (167, 110, 110);
+    --tertiary: #d2b7b7 (210, 183, 183);
+    --dark: #4f1919 (79, 25, 25);
+    --light: #dcdbdb (220, 219, 219));
   }
   
   body {
@@ -27,10 +27,17 @@
   h5,
   h6 {
     margin: 0;
+    font-family: 'Lucida Grande';
+    color: var(--primary);
+    background-color: var(--tertiary);
   }
   
   p {
     margin: 0;
+    font-family: 'Lucida Sans Unicode';
+    color: var(--secondary);
+    background-color: var(--light)
+
   }
   
   header {
