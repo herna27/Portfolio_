@@ -265,8 +265,8 @@ html {
   }
   
   /* portfolio project images */
-  /* TODO: Add portfolio project images here using background images*/
-  .BudgetBirdie {
+  /* TODO: Add portfolio project images here using background images -- NEED TO CHANGE CLASSES BACK AFTER ASSIGNMENT*/
+  .run-buddy {
     background-image: url(/images/BudgetBirdie.png);
     background-size:auto;
 
