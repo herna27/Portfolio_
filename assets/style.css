@@ -22,6 +22,7 @@ html {
     font-family: 'Didot';
     color: #cc8fab;
     background-color: var(--light);
+    width: 100%;
   }
   
   h1,
@@ -86,10 +87,6 @@ html {
   
   nav a:last-child {
     margin-right: 0;
-  }
-  
-  img {
-    border: 7px dotted #ff99bb;
   }
 
     .profile-pic {
@@ -160,16 +157,6 @@ html {
   .page-section p {
     margin-bottom: 20px;
   }
-
-  section {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding: 20px;
-    margin: 10px;
-}
-
-  
   
   .section-detail {
     margin: 20px auto;
@@ -189,11 +176,19 @@ html {
 }
 .primary-border {
     border-color: var(--primary-color);
-  
-  .flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    flex: 0 0 66%;
+}
+
+/*this makes the led-wall div float left so it can be next to react-calc image with no space*/
+  .led-wall {
+    margin: 0;
+    padding: 0;
+    float: left;
+  }
+
+  .react-calc {
+    margin: 0;
+    padding: 0;
+    float: right;
   }
   
   .flex-item {
@@ -213,7 +208,7 @@ html {
     font-size: 0.9rem;
     position: relative;
     margin: 12px;
-    width: fit-content;
+    width: 100%;
     font-weight: bold;
   }
      
@@ -263,66 +258,113 @@ html {
     background-size: 100% 88%;
     color: var(--secondary);
   }
-  
+
+ 
   /* portfolio project images */
   /* TODO: Add portfolio project images here using background images -- NEED TO CHANGE CLASSES BACK AFTER ASSIGNMENT*/
+
   .run-buddy {
     background-image: url(/images/BudgetBirdie.png);
-    background-size:auto;
-
-    
+    background-size: cover;
+    background-position: center;
   }
   
-  .Horiseon {
+  .led-wall {
     background-image: url(/images/Horiseon.JPG);
+    background-size: cover;
+    background-position: center;
   }
 
   
-  .Prework-Study-Guide {
+  .react-calc {
     background-image: url(/images/Prework-Study-Guide.png);
+    background-size: cover;
+    background-position: center;
   }
   
-  .arithmetic01 {
+  .pastel-puzzles {
     background-image: url(/images/arithmetic.png);
+    background-size: cover;
+    background-position: center;
   }
   
-  .GitHub-Profile {
+  .surf-report {
     background-image: url(/images/github.png);
+    background-size: cover;
+    background-position: center;
   }
-  
+
+  .led-wall,
+  .react-calc {
+    flex-basis: calc(50% - 1em);
+    min-height: 200px;
+  }
+
   /* media queries */
   
   /* media queries for a max-width of 980px */
+ 
   @media screen and (max-width: 980px) {
-    header {
-      padding: 0 0 10px 0;
+    .header {
+      padding: 10px;
       justify-content: center;
       text-align: center;
     }
-  
+
     header h1 {
+      font-size: 8vw;
+      margin: 10px 0;
+    }
+
+    nav {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    nav a {
+      margin: 5px 0;
+      font-size: 1.2rem;
+    }
+
+    .page-wrapper {
+      max-width: 95%;
+    }
+
+    .page-section {
+      padding: 10px 0;
+    }
+
+    .about-me > h2 {
+      font-size: 6vw;
+      padding-right: 10px;
+    }
+
+    p {
+      font-size: 22px;
+      padding: 5px 20px;
       width: 100%;
-      padding: 5px;
-      margin-bottom: 10px;
-      font-size: 10vw;
     }
-  
-    header nav {
-      justify-content: center;
+
+    .flex-item {
+      flex-basis: 100%;
+      min-height: 200px;
     }
-  
-    .page-section > h2,
-    .page-section > div {
-      flex: 0 0 100%;
+
+    .flex-item:first-child {
+      min-height: 300px;
     }
-  
-    .page-section > h2 {
-      border-right: none;
-      border-bottom: 4px solid var(--primary);
-      margin-bottom: 20px;
-      padding-bottom: 10px;
-      text-align: left;
-      font-size: 7vw;
+
+    .section-title {
+      font-size: 40px;
+      padding: 20px;
+    }
+
+    .work-section {
+      padding: 10px;
+      margin: 10px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
   }
   
@@ -361,10 +403,22 @@ html {
     }
 
     .flex-item {
-      flex-basis: calc(100% - 1em);
+      flex-basis: 100%;
+      min-height: 200px;
     }
 
     .flex-item:first-child {
       min-height: 300px;
+    }
+
+    p {
+      font-size: 20px;
+      padding: 5px 20px;
+      width: 100%;
+    }
+
+    .section-title {
+      font-size: 36px;
+      padding: 20px;
     }
   }
