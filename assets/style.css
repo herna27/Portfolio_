@@ -24,7 +24,15 @@ html {
     background-color: var(--light);
     width: 100%;
   }
-  
+
+  img {
+    border: 10px solid transparent;
+    padding: 10px;
+    background-image: url('/images/FlowerBorder.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
   h1,
   h2,
   h3,
